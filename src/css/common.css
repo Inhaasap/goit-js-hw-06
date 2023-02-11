@@ -33,68 +33,90 @@ button {
   text-decoration: none;
 }
 
-.main-item {
-  margin-bottom: 10px;
+.main-header {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  color: #077ff7;
+  text-shadow: 3px 3px 0 rgb(251, 229, 34);
+  
 }
 
-.main-link {
-  margin-bottom: 10px;
+.list__item {
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+.task-btn {
+  margin-bottom: 20px;
   text-decoration: none;
 
-  max-width: 150px;
+  max-width: 100px;
   padding: 8px 12px;
 
   border: 0;
   outline: 0;
-  border-radius: 320px;
+  border-radius: 20px;
 
   background-color: #ebecf0;
   text-shadow: 1px 1px 0 #fff;
 
-  font-size: 16px;
+  font-size: 12px;
   font: inherit;
   font-weight: bold;
 
-  color: #61677c;
-  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+  color: #4f5055;
+  box-shadow: inset 3px 3px 8px #f5f110, inset -3px -3px 8px #077ff7;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 
-.main-link:hover {
-  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+.task-btn:hover {
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #6f9dee;
 }
 
-.main-link:active {
+.task-btn:active {
   box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
 }
 
 .goback-btn {
+  margin-left: 30px;
   padding: 8px 12px;
-    cursor: pointer;
-    width: 44px;
-    height: 44px;
-    border: none;
-    border-radius: 50px;
-    border-radius: 50px;
-    background: #92e9bf;
-    box-shadow: inset 3px 3px 8px #8f8f8f, inset -3px -3px 8px #ffffff;
-    transform: all 250ms linear;
-}
-
-.task-btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 8px 16px;
-  font-size: 16px;
   cursor: pointer;
-  border-radius: 4px;
+
+  width: 44px;
+  height: 44px;
+
   border: none;
-  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+  color: #4f5055;
+  background: #f3fdf8;
+  box-shadow: inset 3px 3px 8px #f5f926, inset -3px -3px 8px #2a63f1;
+  transform: all 250ms linear;
 }
 
+.header {
+
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+img {
+  height: 200px;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.gallery>li:not(:last-child) {
+  margin-right: 20px;
+}
 
 
