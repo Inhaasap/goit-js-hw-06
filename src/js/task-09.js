@@ -26,6 +26,10 @@ const body = document.body;
 //   body.style.backgroundColor = getRandomHexColor();
 // };
 
+// const changeColor = () => {
+//   textColor.textContent = body.style.backgroundColor = getRandomHexColor();
+// };
+
 const changeColor = () => {
   textColor.textContent = getRandomHexColor();
   body.style.backgroundColor = textColor.textContent;
